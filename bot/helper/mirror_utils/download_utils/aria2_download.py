@@ -31,7 +31,7 @@ class AriaDownloadHelper(DownloadHelper):
             gdrive = GoogleDriveHelper(None)
             smsg, button = gdrive.drive_list(sname)
           if smsg:
-              dl.getListener().onDownloadError(f'⚠️⚠️ File sudah ada di database, harap /list dahulu sebelum menggunakan /mirror. This download has been stopped.\n\n')
+              dl.getListener().onDownloadError(f'⚠️⚠️ This download has been stopped. File is already there. Please Search: https://testing.bunny.workers.dev/0: \n\n')
               sendMarkup(" Here are the search results:👇👇", dl.getListener().bot, dl.getListener().update, button)
               aria2.remove([download])
           return
@@ -57,7 +57,7 @@ class AriaDownloadHelper(DownloadHelper):
     def __onDownloadPause(self, api, gid):
         LOGGER.info(f"onDownloadPause: {gid}")
         dl = getDownloadByGid(gid)
-        dl.getListener().onDownloadError('Download dihentikan oleh user!🌜🌛')
+        dl.getListener().onDownloadError('❌Download Stopped by user!❌')
  
     @new_thread
     def __onDownloadStopped(self, api, gid):
