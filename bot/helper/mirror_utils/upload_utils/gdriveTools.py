@@ -568,7 +568,7 @@ class GoogleDriveHelper:
  
             msg = f"<b>Search Results For: {fileName} 👇</b>"
             buttons = button_build.ButtonMaker()   
-            buttons.buildbutton("💡HERE💡", f"https://telegra.ph/{self.path[0]}")
+            buttons.buildbutton("❗️HERE❗️", f"https://telegra.ph/{self.path[0]}")
  
             return msg, InlineKeyboardMarkup(buttons.build_menu(1))
  
