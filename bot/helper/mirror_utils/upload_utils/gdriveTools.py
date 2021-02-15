@@ -351,7 +351,7 @@ class GoogleDriveHelper:
                 else:
                     buttons.buildbutton("⚡️𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤⚡️", durl)
                 try:
-                    msg += f'\n\n<b>📀Total Size :</b> {get_readable_file_size(int(meta.get("size")))}\n\n📵𝘿𝙤 N𝙤𝙩 𝙎𝙝𝙖𝙧𝙚 𝙄𝙣𝙙𝙚𝙭 𝙇𝙞𝙣𝙠 😃\n Bot By : <b>@Debojit16 ❤️</b>'
+                    msg += f'\n\n<b>📀Total Size :</b> {get_readable_file_size(int(meta.get("size")))}\n📵𝘿𝙤 N𝙤𝙩 𝙎𝙝𝙖𝙧𝙚 𝙄𝙣𝙙𝙚𝙭 𝙇𝙞𝙣𝙠 😃\n Bot By : <b>@Debojit16 ❤️</b>'
                 except TypeError:
                     pass
                 if INDEX_URL is not None:
