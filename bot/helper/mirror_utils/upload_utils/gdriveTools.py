@@ -319,21 +319,21 @@ class GoogleDriveHelper:
             if meta.get("mimeType") == self.__G_DRIVE_DIR_MIME_TYPE:
                 dir_id = self.create_directory(meta.get('name'), parent_id)
                 result = self.cloneFolder(meta.get('name'), meta.get('name'), meta.get('id'), dir_id)
-                msg += f'📁 𝗙𝗶𝗹𝗲𝗡𝗮𝗺𝗲 : <code>{meta.get("name")}</code>\n\n<b>📀 Total Size :</b> {get_readable_file_size(self.transferred_size)}'
+                msg += f'📁 𝗙𝗶𝗹𝗲𝗡𝗮𝗺𝗲 : <code>{meta.get("name")}</code>\n\n<b>📀Total Size :</b> {get_readable_file_size(self.transferred_size)}'
                 durl = self.__G_DRIVE_DIR_BASE_DOWNLOAD_URL.format(dir_id)
                 buttons = button_build.ButtonMaker()
                 if SHORTENER is not None and SHORTENER_API is not None:
                     surl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, durl)).text
-                    buttons.buildbutton("🌎 𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤", surl)
+                    buttons.buildbutton("⚡️𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤⚡️", surl)
                 else:
-                    buttons.buildbutton("🌎 𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤", durl)
+                    buttons.buildbutton("⚡️𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤⚡️", durl)
                 if INDEX_URL is not None:
                     url = requests.utils.requote_uri(f'{INDEX_URL}/{meta.get("name")}/')
                     if SHORTENER is not None and SHORTENER_API is not None:
                         siurl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, url)).text
-                        buttons.buildbutton("💡 𝐈𝐧𝐝𝐞𝐱 𝐋𝐢𝐧𝐤", siurl)
+                        buttons.buildbutton("🔥𝐈𝐧𝐝𝐞𝐱 𝐋𝐢𝐧𝐤🔥", siurl)
                     else:
-                        buttons.buildbutton("💡 𝐈𝐧𝐝𝐞𝐱 𝐋𝐢𝐧𝐤", url)
+                        buttons.buildbutton("🔥𝐈𝐧𝐝𝐞𝐱 𝐋𝐢𝐧𝐤🔥", url)
                 if BUTTON_THREE_NAME is not None and BUTTON_THREE_URL is not None:
                     buttons.buildbutton(f"{BUTTON_THREE_NAME}", f"{BUTTON_THREE_URL}")
                 if BUTTON_FOUR_NAME is not None and BUTTON_FOUR_URL is not None:
@@ -347,20 +347,20 @@ class GoogleDriveHelper:
                 buttons = button_build.ButtonMaker()
                 if SHORTENER is not None and SHORTENER_API is not None:
                     surl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, durl)).text
-                    buttons.buildbutton("🌎 𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤", surl)
+                    buttons.buildbutton("⚡️𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤⚡️", surl)
                 else:
-                    buttons.buildbutton("🌎 𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤", durl)
+                    buttons.buildbutton("⚡️𝐃𝐫𝐢𝐯𝐞 𝐋𝐢𝐧𝐤⚡️", durl)
                 try:
-                    msg += f'\n\n<b>📀 Total Size :</b> {get_readable_file_size(int(meta.get("size")))}\n\n▫️#Uploaded to Drive ✓\n\n🔴 𝘿𝙤 𝙣𝙤𝙩 𝙎𝙝𝙖𝙧𝙚 𝙄𝙣𝙙𝙚𝙭 𝙇𝙞𝙣𝙠 😃\n\n🛡️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗯𝘆 : <b>@dwikikk</b>'
+                    msg += f'\n\n<b>📀Total Size :</b> {get_readable_file_size(int(meta.get("size")))}\n\n📵𝘿𝙤 N𝙤𝙩 𝙎𝙝𝙖𝙧𝙚 𝙄𝙣𝙙𝙚𝙭 𝙇𝙞𝙣𝙠 😃\n Bot By : <b>@Debojit16 ❤️</b>'
                 except TypeError:
                     pass
                 if INDEX_URL is not None:
                     url = requests.utils.requote_uri(f'{INDEX_URL}/{file.get("name")}')
                     if SHORTENER is not None and SHORTENER_API is not None:
                         siurl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, url)).text
-                        buttons.buildbutton("💡 𝐈𝐧𝐝𝐞𝐱 𝐋𝐢𝐧𝐤", siurl)
+                        buttons.buildbutton("🔥𝐈𝐧𝐝𝐞𝐱 𝐋𝐢𝐧𝐤🔥", siurl)
                     else:
-                        buttons.buildbutton("💡 𝐈𝐧𝐝𝐞𝐱 𝐋𝐢𝐧𝐤", url)
+                        buttons.buildbutton("🔥𝐈𝐧𝐝𝐞𝐱 𝐋𝐢𝐧𝐤🔥", url)
                 if BUTTON_THREE_NAME is not None and BUTTON_THREE_URL is not None:
                     buttons.buildbutton(f"{BUTTON_THREE_NAME}", f"{BUTTON_THREE_URL}")
                 if BUTTON_FOUR_NAME is not None and BUTTON_FOUR_URL is not None:
