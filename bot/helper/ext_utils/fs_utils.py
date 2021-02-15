@@ -81,7 +81,7 @@ def get_base_name(orig_path: str):
     elif orig_path.endswith(".rar"):
         return orig_path.replace(".rar", "")
     else:
-        raise NotSupportedExtractionArchive('File format not supported for extraction')
+        raise NotSupportedExtractionArchive('😔File format not supported for extraction😔')
 
 
 def get_mime_type(file_path):
