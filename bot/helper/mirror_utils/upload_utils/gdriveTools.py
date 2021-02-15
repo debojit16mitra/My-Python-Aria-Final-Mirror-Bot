@@ -556,9 +556,9 @@ class GoogleDriveHelper:
  
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = '𝗠𝗜𝗥𝗥𝗢𝗥 𝗭𝗢𝗡𝗘',
-                                                        author_name='👲 𝗨𝗽𝗹𝗼𝗮𝗱 𝗕𝘆 Dwiki',
-                                                        author_url='https://t.me/dwikikk',
+                                                        title = 'Bunny Mirror',
+                                                        author_name='By Büññy®',
+                                                        author_url='',
                                                         html_content=content
                                                         )['path'])
  
