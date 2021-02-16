@@ -79,17 +79,17 @@ def bot_help(update, context):
     help_string = f'''
 /{BotCommands.HelpCommand}: Need Help??🥴
 /{BotCommands.MirrorCommand}: To Start mirroring the link to google drive✨
-/{BotCommands.UnzipMirrorCommand}: Starts mirroring and if downloaded file is any archive , extracts it to google drive🤐.
-/{BotCommands.TarMirrorCommand}: Start mirroring and upload the archived (.tar) version of the download🏴󠁡󠁺󠁧󠁯󠁲󠁿.
-/{BotCommands.WatchCommand}: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help🎥.
-/{BotCommands.TarWatchCommand}: Mirror through youtube-dl and tar before uploading📺.
+/{BotCommands.UnzipMirrorCommand}: Starts mirroring Mega Files, extracts it to google drive🤐.
+/{BotCommands.TarMirrorCommand}: Start mirroring Mega files and upload the archived (.tar) version of the download🏴󠁡󠁺󠁧󠁯󠁲󠁿.
+/{BotCommands.WatchCommand}: No Use🙃.
+/{BotCommands.TarWatchCommand}: No Use🙃.
 /{BotCommands.CancelMirror} : Reply to the message by which the download was initiated and that download will be cancelled❌.
 /{BotCommands.StatusCommand}: Shows a status of all the downloads😎.
-/{BotCommands.ListCommand}: Searches the search term in the Google drive, if found replies with the link🧐.
+/{BotCommands.ListCommand}: No Use🙃.
 /{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on📊.
 /{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)📈.
 /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports📉.
-/clone: To clone from google drive😉.
+/clone: No Use🙃.
 Me and my master is soo happy to see you😊.                                  💕 BOT BY @Debojit16 💕
  
 '''
