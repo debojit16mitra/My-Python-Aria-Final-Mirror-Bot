@@ -43,21 +43,21 @@ I recommend better Remove Mega Link support!
 ## Bot commands to be set in botfather
 
 ```
-mirror - start mirroring
-tarmirror - upload tar (zipped) file
-unzipmirror - extract files
-clone - copy folder to drive
-watch - mirror YT-DL support link
-tarwatch - mirror youtube playlist link as tar
-cancel - cancel a task
-cancelall - cancel all tasks
-del - delete file from drive
-list - [query] searches files in G-Drive
+megadl - start mega mirroring
+tarmegadl - upload tar (zipped) file
+unzipmegadl - extract files
+clonemegadl - copy folder to drive
+watchmegadl - mirror YT-DL support link
+tarwatchmegadl - mirror youtube playlist link as tar
+cancelmegadl - cancel a task
+cancelallmegadl - cancel all tasks
+del3 - delete file from drive
+list3 - [query] searches files in G-Drive
 status - get mirror status message
-stats - bot usage stats
-help - get detailed help
-ping - ping bot
-log - bot log [owner only]
+stats3 - bot usage stats
+help3 - get detailed help
+ping3 - ping bot
+log3 - bot log [owner only]
 ```
 🤧🤧🤧🤧🤧🤧🤧
 ![Don't Deploy](https://telegra.ph/file/854e5ce82bf8474a2d16b.png)
