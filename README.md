@@ -62,7 +62,7 @@ log - bot log [owner only]
 🤧🤧🤧🤧🤧🤧🤧
 ![Don't Deploy](https://telegra.ph/file/854e5ce82bf8474a2d16b.png)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/debojit16mitra/My-Python-Aria-Final-Mirror-Bot)
 
 
 ## Setting up config file
