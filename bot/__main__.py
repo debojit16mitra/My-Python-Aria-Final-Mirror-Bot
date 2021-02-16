@@ -44,8 +44,7 @@ def stats(update, context):
 def start(update, context):
     start_string = f'''
 This is a bot which can mirror all your links to Google drive!
-
-👲 Moded By: @MaxxRiderz
+By: @Debojit16 💝
 
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
